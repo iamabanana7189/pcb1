@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:testpcb1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -645,12 +644,4 @@ F 3 "" H 1800 3100 60  0001 C CNN
 	1    1650 3100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1300 1500 1150 1500
-Wire Wire Line
-	1300 1600 1150 1600
-Text GLabel 1150 1500 0    31   Input ~ 0
-SDA
-Text GLabel 1150 1600 0    31   Input ~ 0
-SDL
 $EndSCHEMATC
