@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:testpcb1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -644,4 +645,105 @@ F 3 "" H 1800 3100 60  0001 C CNN
 	1    1650 3100
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1300 1500 1150 1500
+Wire Wire Line
+	1300 1600 1150 1600
+Text GLabel 1150 1500 0    31   Input ~ 0
+SDA
+Text GLabel 1150 1600 0    31   Input ~ 0
+SDL
+$Comp
+L Device:Rotary_Encoder SW?
+U 1 1 5F279AE0
+P 8850 1500
+F 0 "SW?" H 9080 1546 50  0000 L CNN
+F 1 "Rotary_Encoder" H 9080 1455 50  0000 L CNN
+F 2 "" H 8700 1660 50  0001 C CNN
+F 3 "~" H 8850 1760 50  0001 C CNN
+	1    8850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5F27C616
+P 9000 4000
+F 0 "RV?" H 8931 4046 50  0000 R CNN
+F 1 "R_POT" H 8931 3955 50  0000 R CNN
+F 2 "" H 9000 4000 50  0001 C CNN
+F 3 "~" H 9000 4000 50  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1700 1150 1700
+Text GLabel 1150 1700 0    31   Input ~ 0
+POT
+Text GLabel 2850 1300 2    31   Input ~ 0
+RST
+Wire Wire Line
+	2700 1300 2850 1300
+Wire Wire Line
+	2700 1200 2850 1200
+Text GLabel 2850 1200 2    31   Input ~ 0
+GND
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F289AFB
+P 4200 1500
+F 0 "SW?" H 4200 1785 50  0000 C CNN
+F 1 "SW_Push" H 4200 1694 50  0000 C CNN
+F 2 "" H 4200 1700 50  0001 C CNN
+F 3 "~" H 4200 1700 50  0001 C CNN
+	1    4200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1500 4800 1500
+Wire Wire Line
+	4000 1500 3500 1500
+Text GLabel 3500 1500 0    31   Input ~ 0
+RST
+Text GLabel 4800 1500 2    31   Input ~ 0
+GND
+Text GLabel 2850 1400 2    31   Input ~ 0
+VCC
+Wire Wire Line
+	2850 1400 2700 1400
+Text GLabel 2850 1500 2    31   Input ~ 0
+row0
+Text GLabel 2850 1600 2    31   Input ~ 0
+row1
+Text GLabel 2850 1700 2    31   Input ~ 0
+row2
+Text GLabel 2850 1800 2    31   Input ~ 0
+row3
+Text GLabel 2850 1900 2    31   Input ~ 0
+row4
+Wire Wire Line
+	2850 1500 2700 1500
+Wire Wire Line
+	2700 1600 2850 1600
+Wire Wire Line
+	2850 1700 2700 1700
+Wire Wire Line
+	2700 1800 2850 1800
+Wire Wire Line
+	2850 1900 2700 1900
+Text GLabel 2850 2000 2    31   Input ~ 0
+col0
+Text GLabel 2850 2100 2    31   Input ~ 0
+col1
+Text GLabel 2850 2200 2    31   Input ~ 0
+col2
+Text GLabel 1150 2200 0    31   Input ~ 0
+col3
+Wire Wire Line
+	2850 2000 2700 2000
+Wire Wire Line
+	2700 2100 2850 2100
+Wire Wire Line
+	2850 2200 2700 2200
+Wire Wire Line
+	1300 2200 1150 2200
 $EndSCHEMATC
