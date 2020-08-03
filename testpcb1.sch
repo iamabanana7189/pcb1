@@ -685,8 +685,6 @@ Wire Wire Line
 	2700 1300 2850 1300
 Wire Wire Line
 	2700 1200 2850 1200
-Text GLabel 2850 1200 2    31   Input ~ 0
-GND
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5F289AFB
@@ -706,8 +704,6 @@ Text GLabel 3500 1500 0    31   Input ~ 0
 RST
 Text GLabel 4800 1500 2    31   Input ~ 0
 GND
-Text GLabel 2850 1400 2    31   Input ~ 0
-VCC
 Wire Wire Line
 	2850 1400 2700 1400
 Text GLabel 2850 1500 2    31   Input ~ 0
@@ -736,7 +732,7 @@ Text GLabel 2850 2100 2    31   Input ~ 0
 col1
 Text GLabel 2850 2200 2    31   Input ~ 0
 col2
-Text GLabel 1150 1100 0    31   Input ~ 0
+Text GLabel 1150 2200 0    31   Input ~ 0
 col3
 Wire Wire Line
 	2850 2000 2700 2000
@@ -745,5 +741,13 @@ Wire Wire Line
 Wire Wire Line
 	2850 2200 2700 2200
 Wire Wire Line
+	1300 2200 1150 2200
+Wire Wire Line
 	1300 1100 1150 1100
+Text GLabel 1150 1100 0    31   Input ~ 0
+ROT1
+Wire Wire Line
+	1300 1200 1150 1200
+Text GLabel 1150 1200 0    31   Input ~ 0
+ROT2
 $EndSCHEMATC

@@ -746,4 +746,12 @@ Wire Wire Line
 	2850 2200 2700 2200
 Wire Wire Line
 	1300 2200 1150 2200
+Wire Wire Line
+	1300 1100 1150 1100
+Text GLabel 1150 1100 0    31   Input ~ 0
+ROT1
+Wire Wire Line
+	1300 1200 1150 1200
+Text GLabel 1150 1200 0    31   Input ~ 0
+ROT2
 $EndSCHEMATC
