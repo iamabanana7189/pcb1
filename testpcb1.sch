@@ -654,17 +654,6 @@ SDA
 Text GLabel 1150 1600 0    31   Input ~ 0
 SCL
 $Comp
-L Device:Rotary_Encoder SW?
-U 1 1 5F279AE0
-P 1750 4750
-F 0 "SW?" H 1980 4796 50  0000 L CNN
-F 1 "Rotary_Encoder" H 1980 4705 50  0000 L CNN
-F 2 "" H 1600 4910 50  0001 C CNN
-F 3 "~" H 1750 5010 50  0001 C CNN
-	1    1750 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV?
 U 1 1 5F27C616
 P 1750 5850
@@ -846,4 +835,70 @@ Wire Wire Line
 Connection ~ 1200 1300
 Wire Wire Line
 	1200 1300 1150 1300
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5F2D27A0
+P 1900 4700
+F 0 "SW?" H 1900 5067 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 1900 4976 50  0000 C CNN
+F 2 "" H 1750 4860 50  0001 C CNN
+F 3 "~" H 1900 4960 50  0001 C CNN
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2950 8200 2950
+Connection ~ 7350 2950
+Text GLabel 8200 2950 2    50   Input ~ 0
+ROT-ROW
+Text GLabel 1150 2100 0    31   Input ~ 0
+ROT-COL
+Wire Wire Line
+	1150 2100 1300 2100
+$Comp
+L Device:D_Small D?
+U 1 1 5F2DBE74
+P 2400 4800
+F 0 "D?" H 2400 4593 50  0000 C CNN
+F 1 "D_Small" H 2400 4684 50  0000 C CNN
+F 2 "" V 2400 4800 50  0001 C CNN
+F 3 "~" V 2400 4800 50  0001 C CNN
+	1    2400 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 4800 2200 4800
+Wire Wire Line
+	2500 4800 2600 4800
+Text GLabel 2600 4800 2    50   Input ~ 0
+ROT-ROW
+Text GLabel 2300 4600 2    50   Input ~ 0
+ROT-COL
+Wire Wire Line
+	2300 4600 2200 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5F318747
+P 1400 4700
+F 0 "#PWR?" H 1400 4450 50  0001 C CNN
+F 1 "GND" V 1405 4572 50  0000 R CNN
+F 2 "" H 1400 4700 50  0001 C CNN
+F 3 "" H 1400 4700 50  0001 C CNN
+	1    1400 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 4700 1400 4700
+Text GLabel 1400 4500 0    50   Input ~ 0
+ROT1
+Text GLabel 1400 4900 0    50   Input ~ 0
+ROT2
+Wire Wire Line
+	1600 4600 1600 4500
+Wire Wire Line
+	1600 4500 1400 4500
+Wire Wire Line
+	1600 4800 1600 4900
+Wire Wire Line
+	1600 4900 1400 4900
 $EndSCHEMATC
